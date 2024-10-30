@@ -27,3 +27,29 @@ function round(value, decimals) {
 function randInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+function user() {
+    let age = prompt("Please enter your age");
+
+    if (age >= 60) {
+        return console.log(" You qualify for a Senior discount")
+    }
+    if (age <= 16){
+        return console.log("You are not old enough to drive yet")
+    }
+    if (age == 44){
+        return console.log("So is Mr. Squirrel!")
+    }
+    let age1 = 60 - age
+    return `you are ${age1} years away from the Senior discount`
+}
+
+function user_name() {
+    if (user_name == Mr. Squrriel) {
+        console.log ("🐿️")
+    return console.log
+}
+
+}
+
