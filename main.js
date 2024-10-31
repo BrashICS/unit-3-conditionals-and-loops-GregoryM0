@@ -85,6 +85,8 @@ function basement() {
             alert ("You are eaten alive in a far more grusome way than if you had chosen to run.")
     }
 
+
+
 function living_room() {
         let stair = prompt("You see someone walk up the stairs, will you follow or will you run away? Yes(1) No(2)")
 
@@ -105,6 +107,8 @@ function living_room() {
 
     }
 
+
+    
     function third_choice() {
         let choice = prompt("Are you sure? 1(Basement) 2(Living Room) 3(Run) ")
 
