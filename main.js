@@ -12,7 +12,7 @@
 'use strict';
 
 /*** Event Listeners ***/
-
+document.getElementById("startgame1").addEventListener("click", start_game);
 
 
 /*** Functions ***/
@@ -61,7 +61,7 @@ function start_game() {
     let name = prompt("What is your name??")
     alert(`Welcome, ${name}, to Haunted St. Matthew HS!`)
 
-    let room1 = prompt("Will you go to the basement with the ghouls, or the living room full of insects and beasts? 1 or 2")
+    let room1 = prompt("Will you go to the basement with the ghouls, or the living room full of insects and beasts? Or will you climb up the tree and go through the window into a bedroom 1 or 2 or 3")
 
     if (room1 == 1) {
        basement()
@@ -70,21 +70,64 @@ function start_game() {
         living_room()
     }
     if (room1 == 3) { 
+        window_bedroom()
+    }
+    if (room1 == 4) { 
         third_choice()
     }
 
  
 
 function basement() {
-        let decision1 = prompt("you have walked into the cold ghostly basement. As you enter the room it begins to reek of blood and flesh, you fall down the stairs and land right by the head ghoul. what do you do?  Try to run away(1) or Freeze in terror(2) ")
+        let decision1 = prompt("you have walked into the cold ghostly basement. As you enter the room it begins to reek of blood and flesh, you fall down the stairs and land right by the head ghoul. what do you do?  Try to run away(1) or Freeze in terror(2) or fight(3) ")
 
         if (decision1 == 1) {
             alert ("You have died whilst attempting to flee up the stairs, you were grabbed by the leg and pulled down where you died seconds later. Though with less pain as you had died from  strike to the head from the fall.")
         }
-        if (decision1 ==2)
+        if (decision1 == 2) {
             alert ("You are eaten alive in a far more grusome way than if you had chosen to run.")
+        }
+        if (decision1 == 3) {
+           let live = prompt("You have chosen to fight, you go through a grusome battle for 30 minutes before the cuts and bruises begin to wat you down, as you keep fighting it becomes harder and harder to go on. There are only a few left, what do you do? 1 - fight 2 - call for help ")
+           if (live == 1)
+            battle()
+           if (live == 2)
+            call_for_help()
+        }
     }
 
+    function window_bedroom() {
+        let dec1 = prompt("You have chosen to go through the window, you walk out of the bedroom and see a group of monsters hovering around the stairwell, what do you do, go to fight them while their back is turned (1) or walk around the house another way(2)")
+
+        if (dec1 == 1) {
+            alert("You kill three before you are found out and run to hide in a closet, but their were smallre insects an bats in their, and you are never seen agan.")
+        }
+        if (dec1 == 2) {
+            alert("You walk around the house and find your way to a the treasure room you came here for, it is filled with candy, everything you ever wanted is in that room. but there is one guard left. You take him down without anyone hearing and the candy is all your now.")
+           let escape = prompt("You have to get away now, how will you leave, will you jump out of the window of the treasure room(1) or will you risk it and go back the route you came(2) keep in mind they do checks every 10 minutes and you only have 3 left.")
+           if (escape == 1) {
+            alert("You have gotten down safely but there are guards waiting around the corner, and you are caught.")
+           }
+           if (escape == 2) {
+            let hide = prompt("You are one room down when he three minutes passes, you see the guard coming, where will you hide? in the closet(1) or behind the door(2)")
+            if (hide == 1) {
+                alert("You are found and are captured by the monsters.")
+            }
+            if (hide == 2) {
+                alert("Congratulations!!!! You escaped with the candy after the guard passes the room. ")
+            }
+        }
+        }
+    }
+        
+    }
+    function battle() {
+        alert("You have chosen to fight the remaining ghouls, in your valient effort you overcome your limits and just before you past out from exhaustion and blood loss you slay the last one, though you have survived the fight, you die soon after due to the overflowing blood loss.")
+    }
+
+    function call_for_help() {
+        alert("You hae chosen to call for help, and you have gotten very lucky, some passerbies have heard your ry for help and have come to help, though they have brought some friends with them. You all get ready to fight, but one of your people begin to go crazy and shiver in fear, they are eaten alive right in front of your and everyone else. Horrified my this you all begin to freeze, and in that slpit second the beasts took anvantage and landed hits and bites on all of you, though you survive you and all gravely injured. You keep fighting and eventually win the battle whilst barely surviving. After the fight everyone is stunned but the adrenaline hasnt warn off yet and you can make it out of the basement, where you call for help and end up passing out. As you awaken in the hospital you are presented with all the candy you could ever need and your family there to celebrate that you lived and are ok.")
+    }
 
 
 function living_room() {
@@ -96,7 +139,6 @@ function living_room() {
         if (stair == 2) {
             alert ("You live this time.")
             let new_prompt = prompt =("Will you now leave the house or go to the kitchen? 1 or 2")
-            return new_prompt
         }
             if (new_prompt == 1) {
                 alert ("You live and are given a huge bowl of candy.")
@@ -105,7 +147,7 @@ function living_room() {
             alert ("You are stabbed in the back as you enter the kitchen, and you bleed out on the floor.")
     }
 
-    }
+    
 
 
     
@@ -120,8 +162,10 @@ function living_room() {
             living_room()
         }
         if (choice == 3) { 
-            alert("You have serviced, well done.")
+            alert("You have survived, well done.")
         }
     }
+
+
 
 
