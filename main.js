@@ -212,6 +212,14 @@ else if (selection == 5) {
 
 //And / Or//
 if ((x >= 5) && (x <= 10)) {
-    
+
   }
 //End of And / Or//
+
+function if_else_test() {
+    let rnd = randInt(1,10);
+
+    if(rnd <=10) {
+        console.log("the random number was less than or equal to 10")
+    }   else if (rnd == 2)
+    }
