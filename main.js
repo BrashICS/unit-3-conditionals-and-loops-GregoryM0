@@ -13,6 +13,7 @@
 
 /*** Event Listeners ***/
 document.getElementById("startgame1").addEventListener("click", start_game);
+document.getElementById("menu1").addEventListener("click", menu);
 
 /*** Functions ***/
 
@@ -146,10 +147,6 @@ function living_room() {
             alert ("You are stabbed in the back as you enter the kitchen, and you bleed out on the floor.")
     }
 
-    
-
-
-    
     function third_choice() {
         let choice = prompt("Are you sure? 1(Basement) 2(Living Room) 3(Run) ")
 
@@ -168,3 +165,52 @@ function living_room() {
 
 
 
+
+
+
+
+// Setup the menu
+let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
+// Prompt with the menu
+
+function menu(){
+    let selection = Number(prompt("What will you do? 1 - Play 2 - Options 3 - DLC 4 - Check for Updates 5 - Exit"))
+    if (selection == 1) {
+        alert("Lets Play!")
+    let diff = prompt("What difficulty level will you play on? 1(Easy)2(Medium)2(Hard)?");
+        if (diff == 1) {
+            alert("You selected the easy route.")
+        }
+        else if (diff == 2) {
+            alert("Most people pick the medium route.")
+        }
+        else if (diff == 3) {
+            alert("I see you like a challenge.")
+        }
+}
+else if (selection == 2) {
+    alert("You selected options.")
+}
+else if (selection == 3) {
+    alert("There is no new DLC at this time.")
+}
+else if (selection == 4) {
+    alert("Everything is up to date.")
+}
+else if (selection == 5) {
+    alert("Bye.")
+}
+}
+
+
+//And / Or//
+if ((x >= 5) && (x <= 10)) {
+    
+  }
+//End of And / Or//
