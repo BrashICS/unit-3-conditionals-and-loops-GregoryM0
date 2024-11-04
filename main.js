@@ -15,6 +15,7 @@
 document.getElementById("startgame1").addEventListener("click", start_game);
 document.getElementById("menu1").addEventListener("click", menu);
 
+
 /*** Functions ***/
 
 // A very accurate rounding function
