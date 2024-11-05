@@ -171,13 +171,6 @@ function living_room() {
 
 
 // Setup the menu
-let message = `Hi! Please make a selection:
-1 - Play
-2 - Options
-3 - DLC
-4 - Check for Updates
-5 - Exit
-`
 // Prompt with the menu
 
 function menu(){
@@ -196,15 +189,18 @@ function menu(){
             2 - Medium
             3 - Hard`)
 
-     if (diff == 1) {
-        alert("You selected the easy route.")
-    }
-    else if (diff == 2) {
-        alert("Most people pick the medium route.")
-    }
-    else if (diff == 3) {
-        alert("I see you like a challenge.")
-    }
+            if (diff == 1) {
+               alert("You selected the easy route.")
+           }
+           else if (diff == 2) {
+               alert("Most people pick the medium route.")
+           }
+           else if (diff == 3) {
+               alert("I see you like a challenge.")
+           }
+           else {
+               alert("Invalid selection/input. Try again.")
+           } 
     }
     else if (selection == 2) {
         alert("You selected options.")
@@ -217,5 +213,27 @@ function menu(){
     }
     else if (selection == 5) {
         alert("Bye.")
+    }
+    else {
+        alert("Invalid selection/input. Try again.")
+    }
+}
+
+
+
+
+
+
+
+
+
+//else practice//
+function is_number(num) {
+    num = Number(prompt("Choose a number"))
+    if (typeof num == "number") {
+        return "true"
+    }
+    else {
+        return "false"
     }
 }
