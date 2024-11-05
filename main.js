@@ -181,45 +181,41 @@ let message = `Hi! Please make a selection:
 // Prompt with the menu
 
 function menu(){
-    let selection = Number(prompt("What will you do? 1 - Play 2 - Options 3 - DLC 4 - Check for Updates 5 - Exit"))
+    let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
+    let selection = Number(prompt(message))
     if (selection == 1) {
         alert("Lets Play!")
-    let diff = prompt("What difficulty level will you play on? 1(Easy)2(Medium)2(Hard)?");
-        if (diff == 1) {
-            alert("You selected the easy route.")
-        }
-        else if (diff == 2) {
-            alert("Most people pick the medium route.")
-        }
-        else if (diff == 3) {
-            alert("I see you like a challenge.")
-        }
-}
-else if (selection == 2) {
-    alert("You selected options.")
-}
-else if (selection == 3) {
-    alert("There is no new DLC at this time.")
-}
-else if (selection == 4) {
-    alert("Everything is up to date.")
-}
-else if (selection == 5) {
-    alert("Bye.")
-}
-}
+        let diff = prompt(`What difficulty level will you play on?:
+            1 - Easy
+            2 - Medium
+            3 - Hard`)
 
-
-//And / Or//
-if ((x >= 5) && (x <= 10)) {
-
-  }
-//End of And / Or//
-
-function if_else_test() {
-    let rnd = randInt(1,10);
-
-    if(rnd <=10) {
-        console.log("the random number was less than or equal to 10")
-    }   else if (rnd == 2)
+     if (diff == 1) {
+        alert("You selected the easy route.")
     }
+    else if (diff == 2) {
+        alert("Most people pick the medium route.")
+    }
+    else if (diff == 3) {
+        alert("I see you like a challenge.")
+    }
+    }
+    else if (selection == 2) {
+        alert("You selected options.")
+    }
+    else if (selection == 3) {
+        alert("There is no new DLC at this time.")
+    }
+    else if (selection == 4) {
+        alert("Everything is up to date.")
+    }
+    else if (selection == 5) {
+        alert("Bye.")
+    }
+}
