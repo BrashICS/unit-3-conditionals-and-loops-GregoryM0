@@ -27,10 +27,18 @@ h3 {
 }
 
 #Sword {    
-    border-color:rgb(238, 255, 0);
+    border-color:rgb(0, 0, 0);
     border-style:solid;
     width:200px;
     margin:5px;
-    background-color: aliceblue;
-
+}
+#textsword {
+    position:relative;
+    top: -200px;
+    right: -250px;
+    border-color:rgb(0, 0, 0);
+    border-style:solid;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    color:black;
 }

@@ -14,6 +14,9 @@
 /*** Event Listeners ***/
 document.getElementById("startgame1").addEventListener("click", start_game);
 document.getElementById("menu1").addEventListener("click", menu);
+document.getElementById("Sword").addEventListener("mouseover", image_pop);
+document.getElementById("Sword").addEventListener("mouseleave", image_out);
+
 
 
 /*** Functions ***/
@@ -252,3 +255,10 @@ function which_day(n){
     }
 }
 
+
+function image_pop(){
+    document.getElementById("textsword") .textContent = "What is going on with Landons computer right now?"
+}
+function image_out(){
+    document.getElementById("textsword") .textContent = ""
+}
