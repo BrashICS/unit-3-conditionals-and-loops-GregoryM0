@@ -219,21 +219,36 @@ function menu(){
     }
 }
 
-
-
-
-
-
-
+ 
 
 
 //else practice//
 function is_number(num) {
-    num = Number(prompt("Choose a number"))
     if (typeof num == "number") {
-        return "true"
+        console.log("true")
     }
     else {
-        return "false"
+        console.log("false")
     }
 }
+
+function which_day(n){
+    if (n == 1) {
+        return("Sunday")
+    } if (n == 2) {
+        return("Monday")
+    } if (n == 3) {
+        return("Tuesday")
+    } if (n == 4) {
+        return("Wednsday")
+    } if (n == 5) {
+        return("Thursday")
+    } if (n == 6) { 
+        return("Friday")
+    } if (n == 7) {
+        return("Saturday")
+    } else {
+        return("Invalid number/input")
+    }
+}
+

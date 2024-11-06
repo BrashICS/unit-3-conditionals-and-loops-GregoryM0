@@ -25,3 +25,12 @@ h3 {
     text-decoration: underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#Sword {    
+    border-color:rgb(238, 255, 0);
+    border-style:solid;
+    width:200px;
+    margin:5px;
+    background-color: aliceblue;
+
+}
