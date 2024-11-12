@@ -262,3 +262,35 @@ function image_pop(){
 function image_out(){
     document.getElementById("textsword") .textContent = ""
 }
+
+
+
+
+let die1 = randInt(1, 6);
+let die2 = randInt(1, 6);
+let count = 1;
+while (die1 != 1 && die2 != 1) {
+  die1 = randInt(1, 6);
+  die2 = randInt(1, 6);
+  count += 1;
+}
+console.log(`Rolled snake eyes after ${count} rolls.`);
+
+
+
+function countdown(start, stop) {
+    if (start <= stop) {
+        return `stop is a higher number than stop?`
+    }
+    
+    let x = start
+    let y = stop
+    let count = 1
+    while (x != y) {
+        x = x - 1
+        count += 1;
+        console.log(`${x}`)
+    }
+    console.log (count)
+
+}
