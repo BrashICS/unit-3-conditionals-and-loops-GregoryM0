@@ -266,18 +266,6 @@ function image_out(){
 
 
 
-let die1 = randInt(1, 6);
-let die2 = randInt(1, 6);
-let count = 1;
-while (die1 != 1 && die2 != 1) {
-  die1 = randInt(1, 6);
-  die2 = randInt(1, 6);
-  count += 1;
-}
-console.log(`Rolled snake eyes after ${count} rolls.`);
-
-
-
 function countdown(start, stop) {
     if (start <= stop) {
         return `stop is a higher number than stop?`
@@ -293,4 +281,35 @@ function countdown(start, stop) {
     }
     console.log (count)
 
+}
+
+function average(n) {
+    let avg = 0;
+    let count = 0;
+
+    while (count <= n) {
+    avg = avg + Number(+prompt(`Please enter value ${count}/${n}`));
+    count++;
+    }
+    avg = round (avg / n, 1);
+    console.log(`The average is ${avg}`);
+}
+
+function random_until(min, max, stop) {
+    if (stop > max || stop < min || max <= min) {
+        return -1;
+    }
+
+    let rnd =randInt(min, max);
+
+    while (rnd != stop) {
+        console.log(rnd)
+        rnd =randInt(min, max);
+    }
+    return stop;
+}
+
+function print_reverse(word) {
+    let print = prompt("Write a Word for it to be reversed.")
+    
 }
