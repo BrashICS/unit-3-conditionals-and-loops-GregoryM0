@@ -309,7 +309,33 @@ function random_until(min, max, stop) {
     return stop;
 }
 
-function print_reverse(word) {
-    let print = prompt("Write a Word for it to be reversed.")
-    
+function print_reverse(print) {
+    //start with a blank strng to build up
+    let output = "";
+
+    //Loop through the given string from the END and build the output
+    let i = str.length - 1
+    while (i >= 0) {
+        output += str[i];
+        i--;
+    }
+    console.log(output)
+}
+
+function dragonandgoblin(str) {
+    let i = 0;
+    let countd = 0;
+    let countg = 0;
+    while (i < str.length) {
+        if (str[i] == "d") {
+            countd++;
+            i++;
+        }
+    if(i < str.length) {
+        if (str[i] == "g")
+            countg++;
+            i++;
+            }
+}
+console.log(`${countd}, ${countg}`)
 }
