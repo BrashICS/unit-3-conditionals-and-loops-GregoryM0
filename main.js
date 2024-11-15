@@ -339,3 +339,26 @@ function dragonandgoblin(str) {
 }
 console.log(`${countd}, ${countg}`)
 }
+
+
+function negative_only(){
+    let number;
+    let output;
+    do {
+        number = prompt("Enter a negative number.");
+        output = number;
+      
+      } while (number > -1|| isNaN(number)) ;
+      console.log (`${output}`)
+}
+
+function factorial(n){
+    let product;
+    let number;
+    do{
+        number = n * (n-1)
+        product += number
+    }
+    while (n > 0)
+        console.log(`${product}`)
+}
