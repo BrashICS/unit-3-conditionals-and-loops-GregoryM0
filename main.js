@@ -351,14 +351,34 @@ function negative_only(){
       } while (number > -1|| isNaN(number)) ;
       console.log (`${output}`)
 }
-
 function factorial(n){
-    let product;
-    let number;
+    let product = 0;
+    let number = 0;
     do{
         number = n * (n-1)
+        n--
         product += number
     }
     while (n > 0)
+        console.log(`${product}`)
+}
+
+function count_up(start,stop){
+    for(let count = start; count <= stop; count++){
+        console.log(`${count}`)
+    } 
+
+}
+function count_down(start,stop){
+    for(let count = start; count >= stop; count--){
+        console.log(`${count}`)
+    } 
+
+}
+
+function sum(n){
+    let product = 0;
+    for(let x = 1; x <= n; x++)
+        product += x 
         console.log(`${product}`)
 }
