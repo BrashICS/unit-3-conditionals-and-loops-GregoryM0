@@ -351,16 +351,19 @@ function negative_only(){
       } while (number > -1|| isNaN(number)) ;
       console.log (`${output}`)
 }
-function factorial(n){
-    let product = 0;
-    let number = 0;
-    do{
-        number = n * (n-1)
-        n--
-        product += number
-    }
-    while (n > 0)
-        console.log(`${product}`)
+
+
+
+
+
+
+function factorial(n) {
+let current_digit= 1;
+let product = 1;
+for (let current_digit = 1; current_digit <= n; current_digit++) {
+    product = product * current_digit;
+}
+console.log(`${product}`)
 }
 
 function count_up(start,stop){
@@ -381,4 +384,24 @@ function sum(n){
     for(let x = 1; x <= n; x++)
         product += x 
         console.log(`${product}`)
+}
+
+function count4(begin, end){
+    let sum =0;
+    let count = 0;
+for(let i = begin; i <=end; i++)
+    if (i % 4 == 0){
+            count += 1  
+    }
+    console.log(`${count}`)
+}
+
+function sum_divisable(n, x){
+    let sum = 0;
+    let answer = 0;
+        for(n,x; answer < x; answer += x ){
+            sum += answer
+            
+        }
+        console.log(`${sum}`)
 }
