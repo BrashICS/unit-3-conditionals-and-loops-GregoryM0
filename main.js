@@ -398,10 +398,11 @@ for(let i = begin; i <=end; i++)
 
 function sum_divisable(n, x){
     let sum = 0;
-    let answer = 0;
-        for(n,x; answer < x; answer += x ){
-            sum += answer
-            
+
+    for(let i = 0; i <= n; i++ ){
+        if(i % x == 0){
+            sum += i;
+        }            
         }
-        console.log(`${sum}`)
+        console.log(sum)
 }
