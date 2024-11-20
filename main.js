@@ -406,3 +406,23 @@ function sum_divisable(n, x){
         }
         console.log(sum)
 }
+
+// duplicate the string as many times as requested
+function duplicate(str, number_of_times) {
+    let output = "";    // Empty string for building
+    let n = 1;
+  
+    while (n <= number_of_times) {
+      output += str;
+      n++;
+    }
+  
+    return output;
+  }
+
+
+  function count_char(str, char){
+  let letter = string.fromCharCode(char)
+  for(  let count = 0; count < str.length; count++)
+    if (letter = )
+}
