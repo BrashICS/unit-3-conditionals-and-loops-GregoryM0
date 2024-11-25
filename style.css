@@ -1,5 +1,5 @@
 /*
-  style.css
+  style.css 
   Feel free to change this CSS for your own purposes
 */
 
@@ -24,4 +24,21 @@ h6 {
 h3 {
     text-decoration: underline;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Sword {    
+    border-color:rgb(0, 0, 0);
+    border-style:solid;
+    width:200px;
+    margin:5px;
+}
+#textsword {
+    position:relative;
+    top: -200px;
+    right: -250px;
+    border-color:rgb(0, 0, 0);
+    border-style:solid;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    color:black;
 }
