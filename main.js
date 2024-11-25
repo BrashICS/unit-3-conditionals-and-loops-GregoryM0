@@ -420,9 +420,26 @@ function duplicate(str, number_of_times) {
     return output;
   }
 
+  function word_builder() {
+    let letter = prompt("Type any letter to build a word. write 'done' when finished")
+    let output = "";
+    while (letter.length != "") {
+        console.log(letter)
+        if (letter.length === 1) {
+            output += letter;
+        } else  {
+            letter = (letter.charAt(0))
+            console.log(letter)
+            output += letter;
+        }
+            letter = prompt("Type any letter to build a word. write 'done' when finished")
+           }
+        console.log(`${output}`)
+        return output
+  }
+  
 
-  function count_char(str, char){
-  let letter = string.fromCharCode(char)
-  for(  let count = 0; count < str.length; count++)
-    if (letter = )
+
+
+function braclets(sales) {
 }
